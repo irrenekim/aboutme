@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Irene Kim | Boston University</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #2b2b2e;
+    --muted: #77747a;
+    --pink: #f8c8d8;
+    --pink-soft: #fdeef3;
+    --pink-deep: #e58fae;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 64px;
+  }
+  header {
+    padding: 32px 0 36px;
+    border-bottom: 3px solid var(--pink);
+  }
+  .school {
+    display: inline-block;
+    background: var(--pink);
+    color: var(--ink);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 4px 14px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  h1 {
+    font-size: clamp(2.4rem, 10vw, 3.6rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-weight: 800;
+  }
+  .major {
+    margin-top: 14px;
+    font-size: 1.1rem;
+    color: var(--muted);
+  }
+  .major strong { color: var(--ink); font-weight: 600; }
+  section { margin-top: 44px; }
+  h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding-left: 12px;
+    border-left: 6px solid var(--pink);
+    margin-bottom: 16px;
+  }
+  ul { list-style: none; display: grid; gap: 10px; }
+  li {
+    background: var(--pink-soft);
+    border-radius: 14px;
+    padding: 16px 18px;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  li::before {
+    content: "";
+    flex: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--pink-deep);
+  }
+  footer {
+    margin-top: 56px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  @media (min-width: 560px) {
+    .wrap { padding-top: 88px; }
+    ul.grid3 { grid-template-columns: repeat(3, 1fr); }
+    ul.grid3 li { justify-content: center; text-align: center; }
+    ul.grid3 li::before { display: none; }
+  }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <span class="school">Boston University</span>
+      <h1>Irene Kim</h1>
+      <p class="major"><strong>Computer Science and Economics</strong> · Freshman</p>
+    </header>
+
+    <section>
+      <h2>취미</h2>
+      <ul class="grid3">
+        <li>펜싱</li>
+        <li>수영</li>
+        <li>첼로</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>좋아하는 장소</h2>
+      <ul class="grid3">
+        <li>롯데월드</li>
+        <li>올림픽공원</li>
+        <li>한강</li>
+      </ul>
+    </section>
+
+    <footer>Irene Kim</footer>
+  </main>
+</body>
+</html>
